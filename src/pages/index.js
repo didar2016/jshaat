@@ -4,9 +4,18 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from '@/component/Nav'
 import Body from '@/component/Body'
+import Loading from '@/component/loading/loading'
+import React,{useState} from 'react'
+import LandingPage from '@/component/LandingPage';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [loading, setLoading] = useState(false);
+
+  if(loading)
+  {
+   return <Loading loading={loading}/>
+  }
   return (
     <>
       <Head>
@@ -16,6 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar/>
+      <LandingPage/>
       <Body/>
     </>
   )

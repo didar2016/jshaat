@@ -52,7 +52,7 @@ function NavBar() {
 
   return (
     <ThemeProvider theme={theme}>
-    <AppBar position="static" sx={{borderCollapse: "separate", marginBottom:"35px"}}>
+    <AppBar position="static" sx={{borderCollapse: "separate"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
          
@@ -146,11 +146,11 @@ function NavBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
+              {/* {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </Box>
         </Toolbar>

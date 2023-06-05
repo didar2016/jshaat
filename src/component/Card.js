@@ -12,7 +12,7 @@ const Card=()=>{
             component="img" alt="logo"
         src="./assets/images/logo.PNG" /> */}
 <div className={styles.card}>
-  <div className={styles.tools}>
+  {/* <div className={styles.tools}>
     <div className={styles.circle}>
       <span className={`${styles.red} ${styles.box}`}></span>
     </div>
@@ -22,10 +22,10 @@ const Card=()=>{
     <div className={styles.circle}>
       <span className={`${styles.green} ${styles.box}`}></span>
     </div>
-  </div>
-  <div >
+  </div> */}
+  <div>
   
-  <img src="./assets/images/logo.PNG" style={{  objectFit: "fill", height:"120px", width: "260px"}}/>
+  <img src="./assets/images/logo.PNG" style={{  objectFit: "fill", height:"120px", width: "100%"}}/>
   
   <div className={styles.details}>
   <h2 className={styles.course_name}> Course: Next.js </h2>
